@@ -1,0 +1,333 @@
+# ============================================
+# .gitignore para Proyecto Base de Datos Universos
+# ============================================
+
+# ============================================
+# ARCHIVOS DE CONFIGURACIÓN SENSIBLES
+# ============================================
+
+# Archivos de configuración con credenciales
+config.php
+config.json
+config.yml
+config.yaml
+.env
+.env.local
+.env.*.local
+settings.ini
+database.ini
+db_config.php
+connection.php
+
+# Archivos de configuración de MySQL/MariaDB
+my.cnf
+my.ini
+.my.cnf
+
+# Archivos con contraseñas o tokens
+*password*
+*token*
+*secret*
+*credentials*
+*.pem
+*.key
+*.cert
+
+# ============================================
+# DOCUMENTOS PERSONALES Y PRIVADOS
+# ============================================
+
+# Documentos de Word privados
+*privado*.docx
+*personal*.docx
+*contraseña*.docx
+*password*.docx
+*notas_privadas*.docx
+borrador*.docx
+draft*.docx
+
+# PDFs privados
+*privado*.pdf
+*personal*.pdf
+*confidencial*.pdf
+
+# Notas personales
+notas_personales.*
+mis_notas.*
+TODO_personal.*
+
+# ============================================
+# ARCHIVOS DEL SISTEMA OPERATIVO
+# ============================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================
+# IDEs Y EDITORES
+# ============================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains (PhpStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ============================================
+# BASES DE DATOS Y BACKUPS
+# ============================================
+
+# Archivos de bases de datos locales
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+
+# Dumps con datos sensibles
+*dump_produccion*.sql
+*backup_real*.sql
+*datos_reales*.sql
+*clientes*.sql
+*usuarios*.sql
+
+# Archivos de backup
+*.backup
+*.bak
+*.old
+*.orig
+backup/
+backups/
+respaldos/
+
+# Logs de MySQL
+*.log
+mysql*.log
+error.log
+slow-query.log
+
+# Archivos binarios de MySQL
+*.frm
+*.ibd
+*.MYD
+*.MYI
+
+# ============================================
+# ARCHIVOS TEMPORALES Y CACHÉ
+# ============================================
+
+# Temporales generales
+*.tmp
+*.temp
+temp/
+tmp/
+cache/
+.cache/
+
+# Archivos de locks
+*.lock
+.lock
+package-lock.json
+yarn.lock
+composer.lock
+
+# Node modules (si usas Node.js)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Composer (PHP)
+vendor/
+composer.phar
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.env
+.venv
+env/
+venv/
+ENV/
+
+# ============================================
+# ARCHIVOS DE PROYECTO GRANDES
+# ============================================
+
+# Archivos grandes que no deben subirse
+*.iso
+*.dmg
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
+
+# Videos y multimedia pesados
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mkv
+
+# Imágenes de alta resolución (opcional)
+# *.psd
+# *.ai
+
+# ============================================
+# ARCHIVOS ESPECÍFICOS DEL PROYECTO
+# ============================================
+
+# Archivos de prueba con datos reales
+test_data_real.sql
+datos_prueba_reales.sql
+
+# Documentos con información personal del equipo
+integrantes_contactos.docx
+informacion_equipo.docx
+
+# Archivos de presentación borrador
+*borrador*.pptx
+*draft*.pptx
+
+# Archivos de correcciones privadas
+correcciones_privadas.*
+feedback_interno.*
+
+# ============================================
+# DIRECTORIOS A IGNORAR
+# ============================================
+
+# Directorios de desarrollo
+dev/
+development/
+local/
+
+# Directorios de documentación privada
+docs/private/
+documentacion_interna/
+
+# Directorios de pruebas
+tests/private/
+test_data/
+
+# Directorios de logs
+logs/
+log/
+
+# ============================================
+# EXCEPCIONES (archivos que SÍ deben incluirse)
+# ============================================
+
+# Asegurarse de incluir estos archivos importantes
+!README.md
+!.gitignore
+!universos.sql
+!datos_mejorados.sql
+!datos.sql
+
+# Documentos importantes del proyecto (los que SÍ deben estar)
+!Introduccion*.docx
+!IntroduccioÌn*.docx
+
+# ============================================
+# NOTAS IMPORTANTES
+# ============================================
+
+# Este .gitignore protege:
+# 1. Archivos de configuración con credenciales
+# 2. Documentos personales del equipo
+# 3. Backups con datos reales
+# 4. Archivos temporales del sistema
+# 5. Archivos de IDEs y editores
+# 6. Logs y archivos de caché
+#
+# RECUERDA: 
+# - Nunca subas contraseñas reales
+# - Nunca subas datos personales de usuarios reales
+# - Usa datos de ejemplo en los archivos SQL públicos
+# - Revisa siempre antes de hacer commit
+
+# ============================================
+# FIN DE .gitignore
+# ============================================
